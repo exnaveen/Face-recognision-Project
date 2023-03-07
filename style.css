@@ -1,0 +1,23 @@
+body
+{
+  background-color: aqua;
+}
+
+ul
+{
+background-color: darkviolet;
+color: white;
+list-style-type: none;
+}
+
+h1
+{
+    font-family:monospace;
+    color:darkorange;
+}
+
+hr{
+    height: 3px;
+    background-color: blue;
+    border: none;
+}

@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Face recogniser</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+    <body>
+        <center>
+        <h1>Face recognision App</h1>
+        <h3>This app can recognise the following faces:</h3>
+
+        <br>
+
+        <h4><ul>
+        <li>Ethan</li>
+        <br>
+        <li>Father</li>
+        <br>
+        <li>Grandmother</li>
+        </ul></h4>
+
+        <hr>
+
+        <h3>Webcam</h3>
+        <div id="camera"></div>
+
+        <hr>
+
+        <h3>Captured Image</h3>
+        <div id="result"></div>
+
+        <hr>
+
+        <br>
+
+        <button class="btn btn-success" onclick="take_snapshot()" >Capture Image</button>
+
+        <br>
+        <br>
+
+        <button class="btn btn-primary" onclick="check()" >Reconise</button>
+
+        <br>
+        <br>
+
+        <p style="font-size: 17px; color:crimson">Face : <span id="result_object_name"></span></p>
+        <p style="font-size: 17px; color:crimson">Accuracy : <span id="result_object_accuracy"></span></p>
+         </center>
+
+         <script src="main.js"></script>
+    </body>
+</html>
